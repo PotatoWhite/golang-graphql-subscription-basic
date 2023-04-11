@@ -1,0 +1,17 @@
+type Mutation {
+    sendMessage(content: String!): Message!
+}
+
+type Subscription {
+    messageSent: Message!
+}
+
+type Message {
+    id: ID!
+    content: String!
+    createdAt: String!
+}
+
+type Query {
+    ping: String!
+}
